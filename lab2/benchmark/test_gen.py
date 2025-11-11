@@ -1,10 +1,10 @@
 import random 
 
-c = 1000000
+c = 100000
 alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 def randKey():
-    l = random.randint(0, 255)
+    l = random.randint(1, 255)
     k = ""
 
     for i in range(l):
@@ -26,4 +26,4 @@ with open("in.txt", "w") as file:
                 keys.remove(k)
             file.write(f"- {k}\n")
         else:
-            file.write(f"{k}")
+            file.write(f"{k}\n")

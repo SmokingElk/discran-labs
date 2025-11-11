@@ -1,5 +1,8 @@
 all: build run
 
+test: build
+	./app.out < test.txt
+
 build: app.out
 
 app.out: main.c
@@ -7,4 +10,3 @@ app.out: main.c
 
 run:
 	./app.out
-
